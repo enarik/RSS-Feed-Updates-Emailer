@@ -1,12 +1,12 @@
 # RSS-Feed-Updates-Emailer
 This will parse an rss feed and email you updates as they become available.
 
-fromaddr = "fromemail same as server.login"      ~~~ The email that will be the "send from" email
+fromaddr = "fromemail same as server.login"      ~~~ The email that will be the "send from" email\
+
 toaddr = "to email"                              ~~~ The email that it will be sent to
 
-msg['From'] = fromaddr                           ~~~ = fromaddr
-msg['To'] = toaddr                               ~~~ = toaddr
 msg['Subject'] = "Subject of Email"              ~~~ = Subject of Email
+
 body = "Body of Email"                           ~~~ = Body of email
 
 server = smtplib.SMTP('smtpserver', smtpport)    ~~~ = your smtp server and port (Gmail is smtp.gmail.com and port 587)
